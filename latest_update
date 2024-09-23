@@ -1,0 +1,26 @@
+scalability:
+  replicas: 3
+  maxReplicas: 6
+  autoscaleCPUPercent: 80
+
+cmdArgs: []
+
+httpService:
+  internalPort: 8080
+  public:
+    enable: false
+    auth: false
+    host: ""
+
+metrics:
+  enable: false
+  prometheus:
+    path: /metrics
+    instance: "prometheus"
+
+resources:
+  memoryMiB: 120
+  cpuMilli: 100
+
+healthCheck:
+  livePath: /healthz/live
