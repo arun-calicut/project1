@@ -1,0 +1,6 @@
+hostname: 'simple-php.local'
+mountPath: 'var/www/html/'
+hostPath: '/home/new_prjct/project'
+image:
+  name: php
+  tag: 8.1-apache
