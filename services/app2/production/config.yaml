@@ -1,0 +1,5 @@
+---
+httpService:
+  public:
+    enable: false
+    host: "app2.kahoy-helm-example.valhalla.slok.dev"
