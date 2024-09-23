@@ -1,0 +1,10 @@
+Enumerating objects: 59, done.
+Counting objects: 100% (59/59), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (47/47), done.
+Writing objects: 100% (59/59), 19.65 KiB | 4.91 MiB/s, done.
+Total 59 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), done.
+To github.com:arun-calicut/project1.git
+ + 8b931e1...cffeb60 new_branch -> new_branch (forced update)
+branch 'new_branch' set up to track 'origin/new_branch'.
