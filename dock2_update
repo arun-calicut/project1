@@ -1,0 +1,13 @@
+jobs:
+  release-docker-image:
+    env:
+      TAG_IMAGE_LATEST: "true"
+      IMAGE_NAME: ${GITHUB_REPOSITORY}
+    name: Release image
+    runs-on: ubuntu-latest
+    steps:
+      # Set up SHA as version.
+      - name: Set tag on VERSION env var
+        run: echo ::set-env name=VERSION::${GITHUB_SHA}
+      - uses: actions/checkout@v2
+      
