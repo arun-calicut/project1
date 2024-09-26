@@ -1,0 +1,23 @@
+Author: “arun” <arunc110114@gmail.com>
+Date:   Wed Sep 25 17:24:42 2024 +0530
+
+    new commits
+
+diff --git a/dock2_update b/dock2_update
+new file mode 100644
+index 0000000..91ff6f3
+--- /dev/null
++++ b/dock2_update
+@@ -0,0 +1,13 @@
++jobs:
++  release-docker-image:
++    env:
++      TAG_IMAGE_LATEST: "true"
++      IMAGE_NAME: ${GITHUB_REPOSITORY}
++    name: Release image
++    runs-on: ubuntu-latest
++    steps:
++      # Set up SHA as version.
++      - name: Set tag on VERSION env var
++        run: echo ::set-env name=VERSION::${GITHUB_SHA}
++      - uses: actions/checkout@v2
